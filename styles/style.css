@@ -1,0 +1,37 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.main{
+	align-items: center;
+	text-align: center;
+}
+.user_name.main{
+	background: #f5f5f5;
+}
+.heading{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: #f5abf5;
+	border-radius: 10px;
+
+}
+.user_photo{
+	display: flex;
+	/*padding-left: 150px;
+	padding-top: 20px;
+*/
+}
+.main{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.education2, .work, .quality, .education{
+	padding-bottom: 20px;
+}
