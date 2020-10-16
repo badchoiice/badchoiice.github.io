@@ -35,3 +35,21 @@
 .education2, .work, .quality, .education{
 	padding-bottom: 20px;
 }
+.btn{
+	display: block;
+	width: 150px;
+	height:50px;
+	border:1px solid #2E8B57;
+	border-radius: 10px;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 50px;
+	text-decoration: none;
+	color: #2E8B57;
+	font-weight: bold;
+}
+.btn:hover{
+	border: 1px solid #fff;
+	color: #fff;
+	background: #2E8B57;
+}
