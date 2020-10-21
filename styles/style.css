@@ -40,6 +40,13 @@ h1 , h3 {
 .education2, .work, .quality, .education{
 	padding-bottom: 20px;
 }
+.bottons{
+	display: flex;
+	justify-content: row;
+	align-content: center;
+
+}
+
 .btn{
 	display: block;
 	width: 150px;
@@ -57,4 +64,25 @@ h1 , h3 {
 	border: 1px solid #fff;
 	color: #fff;
 	background: #2E8B57;
+}
+.btn2{
+	display: block;
+	width: 150px;
+	height:50px;
+	line-height: 50px;
+	background: #e9eff0;
+	background-image: url(https://png.pngtree.com/png-vector/20190927/ourmid/pngtree-drugs-icon-png-image_1749285.jpg);
+	border: 1px solid #1d4c54;
+	border-radius: 10px;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+	color: #1d4c54;
+	font-weight:bold;
+}
+.btn2:hover{
+	border: 1px solid #1d4c54;
+	color: #000;
+	opacity: 0.5;
+	background: #b3e0e8;
 }
