@@ -51,38 +51,56 @@ h1 , h3 {
 	display: block;
 	width: 150px;
 	height:50px;
-	border:1px solid #2E8B57;
-	border-radius: 10px;
-	text-transform: uppercase;
-	text-align: center;
 	line-height: 50px;
+	background: #fff;
+	border: 1px solid #ef50f2;
+	border-radius: 10px;
+	text-align: center;
 	text-decoration: none;
-	color: #2E8B57;
-	font-weight: bold;
+	color: #ef50f2;
+	text-transform: uppercase;
+	font-weight:bold;
 }
 .btn:hover{
-	border: 1px solid #fff;
+	border: 1px solid ;
+	background: #ef50f2;
 	color: #fff;
-	background: #2E8B57;
 }
 .btn2{
 	display: block;
 	width: 150px;
 	height:50px;
 	line-height: 50px;
-	background: #e9eff0;
-	background-image: url(https://png.pngtree.com/png-vector/20190927/ourmid/pngtree-drugs-icon-png-image_1749285.jpg);
-	border: 1px solid #1d4c54;
+	background: #fff;
+	border: 1px solid #ef50f2;
 	border-radius: 10px;
-	text-transform: uppercase;
 	text-align: center;
 	text-decoration: none;
-	color: #1d4c54;
+	color: #ef50f2;
+	text-transform: uppercase;
 	font-weight:bold;
 }
 .btn2:hover{
-	border: 1px solid #1d4c54;
-	color: #000;
-	opacity: 0.5;
-	background: #b3e0e8;
+	border: 1px solid ;
+	background: #ef50f2;
+	color: #fff;
+}
+.btn3{
+	display: block;
+	width: 150px;
+	height:50px;
+	line-height: 50px;
+	background: #fff;
+	border: 1px solid #ef50f2;
+	border-radius: 10px;
+	text-align: center;
+	text-decoration: none;
+	color: #ef50f2;
+	text-transform: uppercase;
+	font-weight:bold;
+}
+.btn3:hover{
+	border: 1px solid ;
+	background: #ef50f2;
+	color: #fff;
 }
