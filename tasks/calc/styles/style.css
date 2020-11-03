@@ -1,0 +1,88 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Josefin Sans', sans-serif;
+}
+.wrap_calc{
+	margin: 10px auto;
+	height: 628px;	
+	width: 408px;		
+	border:6px solid #5F9D9F;
+	border-radius:11px;
+}
+.casio_logo{ 
+	margin-top: 20px;
+	background: #5F9D9F;
+	width: 100%;
+	height:65px;
+	padding-right: 11px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	color: #fff;
+	font-size: 25px;
+}
+.none{
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom:10px; 
+	padding: 0 14px;
+	height: 50px;
+}
+.none2{
+	width: 135px;
+	height: 50px;
+	background: #5F9D9F;
+}
+.line_calc{
+	float: left;
+}
+.creafix{
+	clear: both;
+}
+.display_calc{
+	padding: 15px 10px;
+}
+.display_calc input{
+	width: 100%;
+	height: 55px;
+}
+.display_calc input,.display_calc input:focus{
+	outline: none;
+	text-align: right;
+	border:5px solid #5F9D9F;
+	border-radius: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #5F9D9F;
+}
+.botton{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin:20px 14px;
+	width: 70px;
+	height: 70px;
+	border:5px solid #5F9D9F;
+	border-radius: 20px;
+	font-size: 23px;
+	font-weight:bold;
+	color: #5F9D9F;
+}
+.botton:hover{
+	cursor: pointer;
+	border:4px solid #5F9D9F;
+	background: #e0e0e0;
+	font-weight: bolder;
+	font-size: 26px;
+	opacity: 0.9;
+}
+.botton:active{
+	background: #5F9D9F;
+	color: #fff;
+	font-size: 28px;
+
+}

@@ -1,0 +1,147 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+}
+h2{
+	padding-top: 26px;
+}
+.point:hover,.sticker:hover,.prod_category:hover,.prod_title:hover,.botton:hover{
+	cursor: pointer;
+	font-weight: bolder;
+}
+.wrapper,.point,.sticker,.prod_category,.prod_price,.botton{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.wrapper{
+	position: relative;
+	margin: 70px auto;
+	width:970px ;
+	height: 455px;
+	border:1px solid #D3D3D3;
+}
+.point{
+	position: absolute;
+	z-index: 1;
+	top: 77px;
+	width: 34px;
+	height: 34px;
+	border: 2px solid #D3D3D3;
+	border-radius: 50%;
+	color: #D3D3D3;
+	font-style: bold;
+	background: #fff;
+}
+.point:hover{
+	width: 38px;
+	height: 38px;
+	border: 2px solid #D3D3D3;
+	border-radius: 50%;
+}
+.point_left{
+	left:-17px;
+}
+.point_right{
+	right:-17px;
+}
+.product{
+	position:relative; 
+	padding:0 18px ;
+	width: 25%;
+	height: 453px;
+	border:1px solid #D3D3D3; /*сірий*/
+}
+.sticker{
+	width: 70px;
+	height: 70px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+	right: 8px;
+	top: -35px;
+	background: #009DE1; /*синенький*/
+}
+.sticker:hover{
+	width: 74px;
+	height: 74px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	opacity: 0.88;
+}
+.sticker_new{
+	background: #86B022;/* зелений*/
+}
+.sticker_name{
+	width: 100%;
+	color: #fff;
+	font-size: 11px;
+}
+.prod_category{
+	height: 94px;
+	border-bottom: 1px solid #D3D3D3;
+}
+.image{
+	padding-top: 23px;
+text-align: center;
+}
+img{
+	height: 145px;
+}
+img:active{
+	position: relative;
+	z-index: 1;
+	height: 160px;
+
+}
+.prod_category_name{
+	color: #788395;
+}
+.prod_title{
+	padding-top: 24px;
+	color: #009BE1;
+	font-weight: bold;
+}
+.prod_title:hover{
+	font-size: 17px;
+}
+.prod_price{
+	padding-top: 33px;
+	font-weight: bold;
+}
+.prod_price_value_new{
+color: #fff;
+}
+.prod_price_value_gift:before{
+	content: "210 ";
+	text-decoration: line-through;
+	font-size: 12px;
+}
+.botton{
+	margin: 23px;
+	width: 140px;
+	height: 40px;
+	background: #F0E524; /*жовтий*/
+}
+.botton:hover{
+	width: 144px;
+	height: 42px;
+	opacity: 0.88;
+}
+.botton_new{
+	background: #CC3399; /*рожевий*/
+}
+.botton_name{
+	color: #000;
+	font-size: 13px;
+	font-weight: bold;
+}
+.botton_new .botton_name{
+	color: #fff;
+}
