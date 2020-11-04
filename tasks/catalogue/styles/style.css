@@ -78,6 +78,8 @@ h2{
 .sticker_new{
 	background: #86B022;/* зелений*/
 }
+.sticker_gift{
+	display: none;
 .sticker_name{
 	width: 100%;
 	color: #fff;
@@ -113,10 +115,11 @@ img:active{
 }
 .prod_price{
 	padding-top: 33px;
+	height: 22px;
 	font-weight: bold;
 }
 .prod_price_value_new{
-color: #fff;
+display: none;
 }
 .prod_price_value_gift:before{
 	content: "210 ";
