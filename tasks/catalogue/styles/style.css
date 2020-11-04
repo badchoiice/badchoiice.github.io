@@ -124,7 +124,7 @@ color: #fff;
 	font-size: 12px;
 }
 .botton{
-	margin: 23px;
+	margin: 23px auto;
 	width: 140px;
 	height: 40px;
 	background: #F0E524; /*жовтий*/
