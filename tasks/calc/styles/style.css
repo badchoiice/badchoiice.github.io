@@ -25,14 +25,14 @@ body{
 	color: #fff;
 	font-size: 25px;
 }
-.none{
+.battery{
 	display: flex;
 	justify-content: flex-end;
 	margin-bottom:10px; 
 	padding: 0 14px;
 	height: 50px;
 }
-.none2{
+.battery2{
 	width: 135px;
 	height: 50px;
 	background: #5F9D9F;
