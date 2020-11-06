@@ -9,7 +9,7 @@ background: -moz-linear-gradient(-45deg,  #272122 0%, #423634 100%); /* FF3.6-15
 background: -webkit-linear-gradient(-45deg,  #272122 0%,#423634 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(135deg,  #272122 0%,#423634 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#272122', endColorstr='#423634',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-margin: 20px auto;
+margin: 30px auto;
 padding: 25px 65px 40px 50px;
 height: 530px;
 width: 1054px;
