@@ -1,0 +1,134 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.wrap_page{
+background: #272122; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #272122 0%, #423634 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #272122 0%,#423634 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #272122 0%,#423634 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#272122', endColorstr='#423634',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+margin: 20px auto;
+padding: 25px 65px 40px 50px;
+height: 530px;
+width: 1054px;
+position: relative;
+}
+.menu_page,.menu_sale_item,.menu_item{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.menu_sale_item,.allmenu_btn{
+	background: #000;
+	color: #fff;
+}
+.menu_sale_item,.menu_item,.allmenu_btn{
+	text-transform: uppercase;
+font-weight: bold;
+}
+.sale_title,.menu_items h2,.allmenu_btn{
+	text-align: center;
+}
+.menu_page{
+	flex-direction: row;
+	width: 950px;
+	height: 395px;
+}
+.menu_sale,.menu_items{
+	height: 100%;
+}
+.menu_sale{
+	width: 330px;
+	background-image: url(https://biancazapatka.com/wp-content/uploads/2020/05/veganer-bohnen-burger.jpg);
+	background-position: center;
+	background-size: 100%;
+	position: relative;
+}
+.menu_sale_item{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: absolute;
+	left: -12px;
+	bottom:25px; 
+width: 338px;
+height: 210px;
+background: #000;
+color: #fff;
+}
+
+.sale_title{
+	padding: 10px 0 0 0;
+	width: 200px;
+	font-size: 48px;
+	line-height: 0.8;
+}
+.sale_price{
+	font-size: 14px;
+	padding-top: 14px;
+}
+.sale_price span{
+	color: #F7C73A;
+}
+.menu_items{
+	width: 610px;
+	background: #fff;
+	font-family: 'Zilla Slab', serif;
+}
+.menu_items h2{
+	padding: 35px 30px 0px 85px;
+	font-size: 20px;
+	font-weight: normal;
+}
+.menu_items ul{
+	list-style: none;
+	padding: 30px 0;
+}
+.menu_item{
+	float: left;
+	flex-direction: column;
+	position: relative;
+	width: 200px;
+	height: 82px;
+	border-bottom: 2px solid #D5D5D5;
+	font-size: 19px;
+	opacity: 0.8;
+	text-align: center;
+}
+.item_name_normalst{
+	text-transform: none;
+}
+.menu_item:nth-child(odd){
+	margin-right: 50px;
+	margin-left: 70px;
+}
+.menu_item:before{
+	position: absolute;
+	bottom: -6px;
+	content: '';
+	background:#D5D5D5;
+	width:11px;
+	height: 11px;
+	transform: rotate(45deg);
+}
+.item_price{
+	color: #8c94a1;
+}
+.allmenu_btn{
+	float: right;
+	margin: 10px -7px 0 0;
+	width: 176px;
+	height: 55px;
+	padding: 17px 0;
+	font-size: 16px;
+}
+.allmenu_btn:hover{
+	cursor: pointer;
+	width: 178px;
+	height: 57px;
+	background: #171616;
+	font-size: 18px;
+}
