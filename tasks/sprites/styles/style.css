@@ -1,0 +1,36 @@
+
+body{
+	margin: 50px 300px;
+}
+div{
+	background-image: url(https://i.stack.imgur.com/WCbrq.png);
+}
+.bird1,.bird2{
+	width: 110px;
+	height: 115px;
+}
+.bird3,.bird4{
+	width: 72px;
+	height: 86px;
+}
+.bird1:hover{
+	background-position: -109px 0;
+}
+.bird2{
+	background-position:-215px 0;
+}
+.bird2:hover{
+	background-position: -319px 0;
+}
+.bird3{
+	background-position:-321px -116px;
+}
+.bird3:hover{
+	background-position:-467px -113px;
+}
+.bird4{
+	background-position:-327px -202px;
+}
+.bird4:hover{
+	background-position:-396px -112px;
+}
