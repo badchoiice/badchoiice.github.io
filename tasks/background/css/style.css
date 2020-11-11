@@ -1,0 +1,219 @@
+/*
+* Background Images - Practice
+* CSS Styles
+*
+*/
+
+
+/* General */
+body{
+	min-width: 960px;
+	height: auto;
+}
+.clearfix{
+	clear: both;
+}
+.button, .subscribe-form button{
+	background: #de0103; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #de0103 0%, #e81226 20%, #e81226 20%, #f4254d 53%, #fc3269 79%, #fd336b 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #de0103 0%,#e81226 20%,#e81226 20%,#f4254d 53%,#fc3269 79%,#fd336b 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #de0103 0%,#e81226 20%,#e81226 20%,#f4254d 53%,#fc3269 79%,#fd336b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de0103', endColorstr='#fd336b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.button:hover,.subscribe-form button:hover{
+	cursor: pointer;
+box-shadow:0 0 4px #FD3369;
+font-weight: bolder;
+}
+.menu li a,.button,#tour,#gallery,#subscribe,footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* Header */
+header{
+	height: 432px;
+	background-image:url(img/bg-01.jpg);
+	background-position: center;
+	background-size: 100%;
+	color: #fff;
+}
+#topbar,.menu,.menu li,.menu li a{
+	height: 50px;
+}
+.container h1,.menu li a,.container a{
+	color: #fff;
+}
+
+#topbar {
+	padding: 0 215px;
+	backdrop-filter: blur(20px);
+}
+.menu{
+	width: 360px;	
+}
+.menu li{
+	float: left;
+	width: 25%;
+}
+
+.menu li a,.button{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+}
+.menu li a:hover{
+	background: #B81A34;
+	font-weight: bolder;
+}
+header .container h1{
+	padding: 89px 0 53px 0;
+	 font-family: 'Metal Mania';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 92px;
+  text-align: center;
+}
+header .container .button{
+	margin: 0 auto;
+	width: 288px;
+	height:55px;
+}
+
+/* Tour */
+#tour,#gallery{
+	background:#383838 url(img/bg.png);
+	font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+}
+#tour .container h2,#gallery .container h2{
+	padding: 40px 0;
+	font-size: 21px;
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+}
+#tour .container{
+	height: 375px;
+}
+.tour-card{
+	box-sizing: border-box;
+	padding: 40px 10px;
+	float: left;
+	width: 200px;
+	height: 217px;
+	margin: 0 9px;
+	color: #fff;
+}
+.madrid{
+	background: url(img/tour/madrid.jpg);
+}
+.turin{
+	background: url(img/tour/turin.jpg);
+}
+.hamburg{
+	background: url(img/tour/hamburg.jpg);
+}
+.krakow{
+	background: url(img/tour/krakow.jpg);
+}
+.tour-card h3{
+	text-transform: uppercase;
+	font-size: 16px;
+}
+.tour-place{
+	padding: 14px 0;
+	font-size: 13px;
+}
+.tour-date{
+	font-size: 11px;
+	font-style: oblique;
+}
+.tour-card .button{
+	position: relative;
+	left: 18px;
+	top: 20px;
+	width: 145px;
+	height: 35px;
+	font-size: 14px;
+}
+/* Gallery */
+#gallery{
+	padding: 0 0 20px 0;
+}
+#gallery .container{
+margin: 0 auto;
+width: 890px;
+}
+.photo{
+	float: left;
+	margin: 10px;
+}
+.photo img{
+	width: 270px;
+	height: 270px;
+}
+
+/* Subscribe */
+#subscribe{
+	height: 290px;
+	background: url(img/bg-02.jpg)  0 -295px/cover no-repeat;
+	backdrop-filter: blur(50px);
+	font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  color: #fff;
+}
+.pitch h2{
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 24px;
+	padding: 38px 0;
+}
+.subscribe-form{
+	display: flex;
+	justify-content: center;
+	padding: 23px 0 0 0;
+	height: 36px;
+}
+.subscribe-form input{
+	margin-right: 5px;
+	width: 210px;
+	height: 100%;
+	border: none;
+}
+.subscribe-form input:focus{
+	outline: none;
+}
+.subscribe-form button{
+height: 110%;
+width: 125px;
+color: #fff;
+border: none;
+}
+
+/* Footer */
+
+footer{
+	height: 95px;
+	background: #212121;
+	background-image:url(img/bg.png);
+	color: #fff;
+}
+.social{
+	width: 145px;
+	height: 15px;
+	padding: 0 0 23px 0;
+	display: flex;
+	justify-content: space-between;
+
+}
+.copyright{
+	font-size: 13px;
+	text-align: center;
+}
+
