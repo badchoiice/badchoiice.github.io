@@ -1,0 +1,159 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family:Arial, sans-serif;
+	line-height: 1.2;
+	/*font-size: 1.1em;*/
+}
+img{
+	display: block;
+	width: 100%;
+}
+.clearfix,
+.clearfix:after{
+content: "";
+	display: block;
+	clear: both;
+}
+.page-wrap{
+	padding: 0 13px;
+}
+.header{
+	max-width: 100%;
+}
+section, .footer{
+	padding: 10px;
+	min-width: 300px;
+	font-size: 0.8em;
+}
+.doc{
+	color: #3D5E96;
+}
+li{
+	padding: 0 15px;
+	list-style-position: inside;
+}
+.main-text span, .footer span{
+	display: block;
+	padding: 10px;
+	text-align: center;
+}
+.propose-item{
+	padding: 10px 0;
+}
+.propose-item__text{
+	padding: 15px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.1em;
+
+}
+.propose-item__btn{
+	width: 100%;
+}
+.btn{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 35px;
+	border-radius: 5px;
+	background: #DD5A48;
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+}
+.main-text:last-child{
+	padding-top: 0;
+}
+.footer{
+	background: #39849B;
+	color: #fff;
+}
+.social-media{
+	padding-bottom: 10px;
+	margin: 0 auto;
+	width: 110px;
+}
+.social-media a{
+	float: left;
+	margin-right: 10px;
+	display: block;
+	border-radius: 50%;
+	width: 42px;
+	height: 42px;
+	background-image:url("img/sprite2.jpg");
+}
+.social-media a:first-child{
+	background-position: -325px -12px;
+}
+.social-media a:last-child{
+	background-position: -151px -12px;
+}
+.unsubscribe a{
+	color: #fff;
+}
+
+@media screen and (min-width: 375px) {
+	section, .footer{
+		padding: 10px 30px;
+	}
+	
+}
+@media screen and (min-width: 580px) {
+	.page-wrap{
+		padding: 0 20px;
+	}
+	.propose-item{
+		float: left;
+		margin-right: 20px;
+		position: relative;
+	width: calc(50% - 10px);
+	}
+	.propose-item:last-child{
+		margin-right: 0;
+	}
+	.propose-item__img{
+		width: 100%;
+		margin: 0 auto;
+	}
+	.propose-item__text{
+	padding:33px 0;
+	}
+	.propose-item__btn{
+	position: absolute;
+	bottom: 0;
+	}
+}
+@media screen and (min-width: 767px) {
+	body{
+		font-size: 1.3em;
+	}
+	.page-wrap{
+		margin: 0 auto;
+		max-width: 740px;
+		padding: 0 15px 20px;
+	}
+	.main-wrap{
+		padding: 0 20px;
+	}
+	.propose-item{
+		min-height: 370px;
+	}
+	.main-text span:last-child{
+		padding-bottom: 20px;
+	}
+}
+@media screen and (min-width: 992px){
+	.page-wrap{
+		border:10px solid #39849B;
+		border-bottom: 20px solid #39849B;
+
+	}
+	.propose-item{
+		height: 310px;
+	}
+}
