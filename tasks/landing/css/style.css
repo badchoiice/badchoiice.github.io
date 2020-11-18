@@ -25,11 +25,15 @@ h2{
 	clear:both;
 }
 /* Header */
-
+header{
+	height: 35px;
+}
 header .container{
 	height: 100%;
 	padding:0;
 	justify-content: space-around;
+	align-items: center;
+	position: relative;
 }
 header .container .brand{
 	padding-left: 10px;
@@ -39,33 +43,43 @@ header .container .brand{
 	text-align: center;
 }
 .menu{
+	display: none;
 	padding: 0;
-	width: 255px;
-	height: 20px;
+	width: 100%;
+	position: absolute;
+	right: 0;
+	background: #737a85;
 }
 .menu li{
-	margin-right: 10px;
+	height: 34px;
 	list-style: none;
-	float: left;
-	width: 22%;
-	height: 100%;
-	text-align: center;
-	line-height: 2;
+	border-bottom: 1px solid #B4C2D5;
+
 }
-.menu li:last-child{
-	margin-right: 0;
+.menu li:first-child{
+border-top: 1px solid #B4C2D5;
 }
 a{
-	display: block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	text-decoration: none;
 	color: #B4C2D5;
-	font-size: 0.7em;
+	font-size: 1em;
 	height: 100%;
 }
 a:hover{
 background: #B4C2D5;
 color: #fff;
 font-weight: bold;
+}
+.icon{
+	font-size: 1.2em;
+	color: #737a85;
+	cursor: pointer;
+}
+.active{
+	display: block;
 }
 /* Services */
 .jumbotron{
@@ -165,6 +179,32 @@ h2{
 }
 }
 @media screen and (min-width: 475px) {
+	header{
+		height: 45px;
+	}
+	.icon{
+		display: none;
+	}
+	.menu{
+		display: block;
+		position: relative;
+		background: none;
+		width: 255px;
+		height: 20px;
+	}
+	.menu li{
+		width: 22%;
+		height: 100%;
+		float: left;
+		margin-right: 5px;
+		border-bottom: none;
+	}
+	.menu li:first-child{
+		border-top: none;
+	}
+	a{
+		font-size: 0.8em;
+	}
 	.post{
 		flex-direction: row-reverse;
 		margin-bottom: 30px;
