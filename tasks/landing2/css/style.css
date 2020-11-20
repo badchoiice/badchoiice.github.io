@@ -94,7 +94,7 @@ font-weight: bold;
 	}
 .active{
 	display: block;
-	transition: .2s;
+	transition: .3s;
 }
 /* Services */
 .jumbotron{
