@@ -1,0 +1,352 @@
+
+/* General */
+
+body{
+	 font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+}
+img{
+	width: 100%;
+}
+h2{
+	font-size: 1.1em;
+}
+.container{
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px 25px;
+}
+.clearfix
+.clearfix:after{
+	display: block;
+	clear:both;
+}
+/* Header */
+header{
+	height: 35px;
+}
+header .container{
+	height: 100%;
+	padding:0;
+	justify-content: space-around;
+	align-items: center;
+	position: relative;
+	background: #f7f7f7;
+}
+header .container .brand{
+	padding-left: 10px;
+	color: #6EB5E6;
+	font-size: 0.7em;
+	font-weight: bold;
+	text-align: center;
+}
+.menu{
+	display: none;
+	padding: 0;
+	width: 100%;
+	position: absolute;
+	right: 0;
+	background: #737a85;
+}
+.menu li{
+	height: 34px;
+	list-style: none;
+	border-bottom: 1px solid #B4C2D5;
+
+}
+.menu li:first-child{
+border-top: 1px solid #B4C2D5;
+}
+a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: #B4C2D5;
+	font-size: 1em;
+	height: 100%;
+}
+a:hover{
+background: #B4C2D5;
+color: #fff;
+font-weight: bold;
+}
+.icon, .active-icon{
+	width: 33px;
+	height: 33px;
+	border-radius: 50%;
+	position: absolute;
+	right: 20px;
+	background-image: url(../img/css_sprites.png);
+	cursor: pointer;
+	transition: .2s;
+	}
+	.icon{
+		background-position: 40px;
+	}
+	.active-icon{
+		background-position: -8px;
+		opacity: 0.6;
+		transform: rotateZ(180deg);
+	}
+.active{
+	display: block;
+	transition: .2s;
+}
+/* Services */
+.jumbotron{
+	height: 130px;
+	background-image: url(../img/jumbotron.jpg);
+	background-size: cover;
+}
+.jumbotron .container{
+	flex-direction: column;
+	height: 100%;
+}
+.container h1{
+	padding-top: 45px;
+	color: #fff;
+	font-size: 1em;
+}
+.button{
+	display: block;
+	line-height: 2;
+	background: #FA5BA5;
+	color: #fff;
+	font-size: 0.8em;
+	text-align: center;
+	border-radius: 30px;
+	width: 150px;
+	height: 25px;
+	text-decoration: none;
+}
+/* Blog */
+.services .container{
+	display: flex;
+	flex-direction: column;
+}
+.serv-col{
+	display: flex;
+}
+.service{
+	display: flex;
+	flex-direction: column;
+	color: #979797;
+	margin-right: 7px;
+}
+.service:last-child{
+	margin-right: 0;
+}
+.service i{
+	text-align: center;
+	font-size: 1.4em;
+}
+.service p{
+	text-align: center;
+	font-size: 0.5em;
+}
+.blog{
+	background: url(..//img/bg.png)100%;
+}
+.blog .container{
+	flex-direction: column;
+}
+.post{
+	display: flex;
+	flex-direction: column;
+	font-size: 0.8em;
+}
+.post h3{
+	font-size: 1em;
+}
+.post-info{
+	order: 1;
+}
+.post img{
+	order: 2;
+}
+/* Footer */
+footer{
+	background: #38404B;
+}
+footer .container{
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #B4C2D5;
+}
+footer .container .brand,footer .container nav{
+	display: none;
+}
+.copyright{
+	font-size: 0.5em;
+}
+@media screen and (min-width: 375px) {
+	.container h1{
+		padding-top: 0;
+	font-size: 1.2em;
+}
+h2{
+	font-size: 1.5em;
+}
+}
+@media screen and (min-width: 475px) {
+	header{
+		height: 45px;
+	}
+	header .container{
+		background: #fff;
+	}
+	.icon{
+		display: none;
+	}
+	.menu{
+		display: block;
+		position: relative;
+		background: none;
+		width: 255px;
+		height: 20px;
+	}
+	.menu li{
+		width: 22%;
+		height: 100%;
+		float: left;
+		margin-right: 5px;
+		border-bottom: none;
+	}
+	.menu li:first-child{
+		border-top: none;
+	}
+	a{
+		font-size: 0.8em;
+	}
+	.post{
+		flex-direction: row-reverse;
+		margin-bottom: 30px;
+	}
+	.post img{
+		display: block;
+		width: 45%;
+		margin-right: 15px;
+	}
+header .container .brand{
+	padding-left: 20px;
+	font-size: 1.1em;
+}
+}
+@media screen and (min-width: 600px) {
+	.container{
+	padding: 10px 40px;
+}
+.jumbotron{
+	height: 180px;
+	}
+.jumbotron .container{
+	flex-direction: column;
+	justify-content: space-around;
+	height: 100%;
+}
+.button{
+	width: 170px;
+	height: 40px;
+	line-height: 3.5;
+}
+.service i{
+	font-size: 1.5em;
+}
+.service p{
+	text-align: center;
+	font-size: 0.7em;
+}
+.post{
+	font-size: 0.9em;
+}
+.post h3{
+	font-size: 1.1em;
+}
+}
+@media screen and (min-width: 767px) {
+	.container{
+	padding: 10px 80px;
+}
+	.jumbotron{
+	height: 200px;
+	}
+	footer .container .brand,footer .container nav{
+	display: block;
+}
+}
+@media screen and (min-width: 992px){
+	header{
+		height: 100px;
+	}
+	header .container .brand{
+	font-size: 2em;
+}
+.menu{
+	width: 270px;
+	height: 100%;
+}
+a{
+	font-size: 1em;
+}
+	.jumbotron{
+	height: 130px;
+	background-image: url(../img/jumbotron.jpg);
+	background-size: cover;
+}
+.button{
+	width: 240px;
+	height: 60px;
+	line-height: 4.5;
+}
+	.container{
+		padding: 63px 170px;
+	}
+	.jumbotron{
+		height: 410px;
+	}
+	.container h1{
+	font-size: 2.5em;
+}
+.container h2{
+	padding-bottom: 40px;
+}
+.service{
+	width: 267px;
+	height: 140px;
+}
+.service i{
+	font-size: 39px;
+}
+.service p{
+	padding-top: 35px;
+	line-height: 1.7;
+	font-size: 13px;
+}
+.post{
+	height: 240px;
+}
+.post img{
+	margin-right: 30px;
+	width: 50%;
+}
+footer{
+	font-size: 1.1em;
+}
+}
+@media screen and (min-width: 1435px){
+	body{
+		margin: 0 auto;
+		width: 1435px;
+	}
+	.container{
+		padding: 83px 267px;
+	}
+	.post{
+	width: 930px;
+}
+}
