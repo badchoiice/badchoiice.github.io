@@ -622,8 +622,9 @@ border-bottom: 1px solid #0193e9;
 	.number,.shop i,.like i{
 		text-decoration: none;
 	}
-	.shop i,.like i{
+	.shop i,.like i, .skype-ad a i{
 		font-size: 1em;
+		margin-right: 5px;
 	}
 	.number{
 		width: 167px;
