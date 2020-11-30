@@ -395,7 +395,7 @@ justify-content: center;
 .products .products_row,.product-new-items{
 	width: 100%;
 	position: relative;
-	overflow-x: scroll;
+	overflow-x: auto;
 }
 .product_item,.product-new-item{
 	position: relative;
