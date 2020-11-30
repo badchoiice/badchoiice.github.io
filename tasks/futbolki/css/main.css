@@ -401,6 +401,7 @@ justify-content: center;
 	position: relative;
 	padding: 10px 0;
 	margin-right: 10px;
+	border: 2px solid #fff;
 }
 .product_item p{
 	margin: 15px 0;
