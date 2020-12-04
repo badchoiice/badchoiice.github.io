@@ -17,10 +17,10 @@ h1 , h3 {
 	align-items: center;
 	text-align: center;
 }
-a{
-text-decoration: none;
-color:#000;
-font-style:italic;
+.user_contacts a{
+        text-decoration: none;
+        color:#000;
+        font-style:italic;
 }
 .user_name.main{
 	padding-top: 15px;
