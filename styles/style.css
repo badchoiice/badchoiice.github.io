@@ -17,6 +17,11 @@ h1 , h3 {
 	align-items: center;
 	text-align: center;
 }
+a{
+text-decoration: none;
+color:#000;
+font-style:italic;
+}
 .user_name.main{
 	padding-top: 15px;
 	background: #f5f5f5;
