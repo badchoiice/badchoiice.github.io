@@ -414,6 +414,7 @@ background-image: url(../img/bg_logo.png);
 }
 .review-item{
 	padding:0 52px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
 }
 .review-item span:last-child{
 	font-size: 15px;
@@ -727,7 +728,6 @@ footer{
 		max-width: 530px;
 		height: 380px;
 		display: flex;
-		box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
 	}
 	.reviews img{
 		width: 320px;
