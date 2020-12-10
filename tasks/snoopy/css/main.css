@@ -21,15 +21,51 @@ height: auto;
 h2{
 	font-size: 25px;
 }
+.header,.icons,.dog a,.popular-products_row,.slider,.product,.product .like-p
+,.complects h2,.complect-price,.size_row,.size_opened-row-info ul,
+.about-left,.size_opened-row-info ul li,.reviews-row,.review-item-text,
+.social-media,.btn_inst a, .btn-form,.social-media a,.footer-info a,
+.footer-info span,label,.slider{
+	display: flex;
+}
+.header,.dog a,.popular-products_row:first-child,.slider,.product,.complects h2,
+.product .like-p,.complect-price,.size_row,.size_opened-row-info ul li,
+.about-left,.btn_inst a, .btn-form,.social-media a,label,.slider{
+	align-items: center;
+}
+.header,.popular-products_row:first-child,.slider,.reviews-row,.review-item-text{
+	justify-content: space-between;
+}
+.dog a,.product .like-p,.complect-price,.size_row,.btn_inst a, .btn-form,
+.social-media a,.slider{
+	justify-content: center;
+}
+.header_burger,li:hover,.product:hover,.size_row{
+	cursor: pointer;
+}
+.categories li a,.login-mob,.product a,.complects h2 a,.complect a,.size_btn,
+.clearfix, .clearfix:after,.instagram-top a:first-child,.logo-f{
+	display: block;
+}
+.login,.left-right,.hidden{
+	display: none;
+}
+.popular-products_row:last-child,.dog,.popular-products_row:last-child,.product-row,
+.complect a,.complect a img,footer{
+	position: relative;
+}
+.menu_log_mobile,.dog a,.product .like-p,.complect-text,.footer-media{
+	position: absolute;
+}
+.dog1,.dog2,.dog3,.dog4{
+	background-size: cover;
+}
 /*топ*/
 .header{
 	padding: 0 12px;
 	height: 50px;
 	background: #000;
 	color: #fff;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
 	position: fixed;
 	top: 0;
 	z-index: 999;
@@ -37,7 +73,6 @@ h2{
 }
 /*бургер*/
 .header_burger{
-	cursor: pointer;
 	font-size: 24px;	
 }
 .logo{
@@ -47,7 +82,6 @@ h2{
 .menu_log_mobile{
 	background: #000;
 	color: #fff;
-	position: absolute;
 	top: 50px;
 	left: -9999px;
 	z-index: 2;
@@ -87,20 +121,17 @@ h2{
 	border-bottom: none;
 }
 .categories li a{
-	display: block;
 	height: 100%;
 	font-size: 18px;
 	color: #fff;
 }
 li:hover{
-	cursor: pointer;
 	background: rgba(0, 0, 0, 0.35);
 }
 li a:hover{
 	color: #FFCD57;
 }
 .login-mob{
-	display: block;
 	padding-left: 12px;
 	padding-bottom: 26px;
 	font-size: 15px
@@ -108,13 +139,7 @@ li a:hover{
 .login-mob i{
 	margin-right: 5px;
 }
-.login{
-	display: none;
-}
 /*іконки*/
-.icons{
-	display: flex;
-}
 .like{
 	margin-right: 13px;
 }
@@ -124,31 +149,22 @@ li a:hover{
 }
 .dog{
 	height: 375px;
-	position: relative;
 }
 .dog1{
 	background-image: url(../img/dog1.png);
-	background-size: cover;
 }
 .dog2{
 	background-image: url(../img/dog2.png);
-	background-size: cover;
 }
 .dog3{
 	background-image: url(../img/dog3.png);
-	background-size: cover;
 }
 .dog4{
 	background-image: url(../img/dog4.png);
-	background-size: cover;
 }
 .dog a{
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	width: 290px;
 	height: 290px;
-	position: absolute;
 	top: 50%;
 	margin-top: -145px;
 	font-size: 25px;
@@ -162,16 +178,10 @@ li a:hover{
 }
 .popular-products_row{
 	padding: 21px 15px 0 13px;
-	display: flex;
-}
-.popular-products_row:first-child{
-	justify-content: space-between;
-	align-items: center;
 }
 .popular-products_row:last-child{
 	overflow-x: auto;
 	width: 100%;
-	position: relative;
 }
 .popular-products_row h2{
 	font-size: 25px;
@@ -184,15 +194,6 @@ li a:hover{
 	background: #eee;
 	color: #000;
 	font-size: 13px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.left-right{
-	display: none;
-}
-.hidden{
-	display: none;
 }
 .product{
 	margin-right: 20px;
@@ -201,38 +202,25 @@ li a:hover{
 	width: 255px;
 	font-size: 13px;
 	font-weight: 600;
-	display: flex;
 	flex-direction: column;
-	align-items: center;
 }
 .product:hover{
 	border: 1px solid #605De9;
-	cursor: pointer;
 }
 .product:last-child{
 	margin-right: 0;
 }
-.product-row{
-/*	display: flex;
-	justify-content: space-between;*/
-	position: relative;
-}
 .product .like-p{
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	width: 30px;
 	height: 30px;
 	border-radius: 50%;
 	background: #605DD4;
 	color: #fff;
 	font-size: 20px;
-	position: absolute;
 	top: 15px;
 	right: -100px;
 }
 .product a{
-	display: block;
 	width: 240px;
 	height: 240px;
 }
@@ -246,12 +234,9 @@ li a:hover{
 	padding: 21px 14px;
 }
 .complects h2{
-	display: flex;
-	align-items: center;
 	margin-bottom: 15px;
 }
 .complects h2 a{
-	display: block;
 	margin-left: 7px;
 	width: 20px;
 	height: 20px;
@@ -261,16 +246,12 @@ li a:hover{
 	margin-bottom: 20px;
 }
 .complect a{
-	display: block;
-	position: relative;
 	background: rgba(0, 0, 0, 0.2);
 }
 .complect a img{
-	position: relative;
 	z-index: -2;
 }
 .complect-text{
-	position: absolute;
 	z-index: 3;
 	left: 19px;
 	top: 16px;
@@ -281,9 +262,6 @@ li a:hover{
 	font-size: 18px;
 }
 .complect-price{
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	width: 97px;
 	height: 30px;
 	border-radius: 19px;
@@ -299,10 +277,9 @@ li a:hover{
 	height: 65px;
 	border-top: 2px solid #DDDCFF;
 	border-bottom: 2px solid #DDDCFF;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	cursor: pointer;
+}
+.size_row:hover{
+	color: #605DD4;
 }
 .size_row h2{
 	font-weight: 500;
@@ -317,8 +294,7 @@ li a:hover{
 	margin-top: 10px;
 	margin-left: -40px;
 	transition: 0.1s ease-in;
-	cursor: pointer;
-}
+	}
 .open{
 	background-image: url(../img/open.png);
 	transform: rotateX(180deg);
@@ -354,7 +330,6 @@ ol li{
 	line-height: 28px;
 }
 .size_opened-row-info ul{
-	display: flex;
 	flex-direction: column;
 	align-items: start;
 	padding: 8px 0;
@@ -362,8 +337,6 @@ ol li{
 }
 .size_opened-row-info ul li{
 	margin-bottom: 5px;
-	display: flex;
-	align-items: center;
 	font-size: 16px;
 }
 .size_opened-row-info ul li img{
@@ -378,14 +351,11 @@ ol li{
 	font-size: 15px;
 }
 .about-left{
-	display: flex;	
 	flex-direction: column;
-	align-items: center;
 }
 .about-left img{
 	margin-top: 23px;
 	margin-bottom: 10px;
-	display: block;
 	width: 160px;
 	height: 160px;
 	border-radius: 50%;
@@ -409,8 +379,6 @@ background-image: url(../img/bg_logo.png);
 }
 .reviews-row{
 	padding:24px 13px;
-	display: flex;
-	justify-content: space-between;
 }
 .review-item{
 	padding:0 52px;
@@ -420,10 +388,8 @@ background-image: url(../img/bg_logo.png);
 	font-size: 15px;
 }
 .review-item-text{
-	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
-	margin: 27px 20px;
+	padding: 27px 20px;
 }
 blockquote{
 		padding-bottom: 15px;
@@ -435,7 +401,6 @@ blockquote{
 }
 .instagram-top a:first-child{
 	margin: 30px auto 21px;
-	display: block;
 	width: 66px;
 	height: 66px;
 	background-image: url(../img/instagram.png);
@@ -455,16 +420,12 @@ blockquote{
 }
 .clearfix, .clearfix:after{
 	content: "";
-	display: block;
 	clear: both;
 }
 .btn_inst a, .btn-form{
 	margin-top: 30px;
 	width: 100%;
 	height: 50px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	background: #605DD4;
 	font-size: 15px;
 	font-weight: 600;
@@ -491,14 +452,10 @@ address{
 	font-style: normal;
 }
 .social-media{
-	display: flex;
 	padding: 12px;
 }
 .social-media a{
 	margin-right: 10px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	border-radius: 50%;
 	width: 30px;
 	height: 30px;
@@ -535,8 +492,6 @@ address{
 }
 label{
 	margin-bottom: 11px;
-	display: flex;
-	align-items: center;
 	font-weight: bold;
 }
 .main_poll input{
@@ -561,14 +516,12 @@ label{
 }
 footer{
 	padding:25px 16px;
-	position: relative;
 	background: #000;
 	color: #fff;
 	min-height: 250px;
 	font-size: 13px;
 }
 .logo-f{
-	display: block;
 	width: 65px;
 	margin-bottom: 21px;
 }
@@ -581,7 +534,6 @@ footer{
 	margin-left: 0;
 }
 .footer-info a,.footer-info span{
-	display: flex;
 	margin-bottom: 10px;
 }
 .footer-mob:first-child a{
@@ -591,7 +543,6 @@ footer{
 	color: #CBCBCB;
 }
 .footer-media{
-	position: absolute;
 	right: 0;
 	top: 10px;
 }
@@ -642,7 +593,11 @@ footer{
 		font-size: 30px;
 	}
 	.dog{
-		height: 425px;
+		height: 435px;
+		background-position: 0 -30px;
+	}
+	.dog{
+		background-position: 0 -45px;
 	}
 	.product-title{
 		display: flex;
@@ -673,6 +628,10 @@ footer{
 	}
 }
 @media screen and (min-width:650px){
+	.complects-row,.complects h2,.instagram-row,.landing-dogs,
+	.right-side,.review-item,.footer-mob{
+		display: flex;
+	}
 	.landing-dogs{
 		padding-top: 80px;
 	}
@@ -694,7 +653,6 @@ footer{
 		height: 170px;
 	}
 	.complects h2{
-		display: flex;
 		justify-content: center;
 	}
 	.complects-row .complect:first-child{
@@ -702,9 +660,6 @@ footer{
 	}
 	.cont{
 	line-height: 30px;
-	}
-	.instagram-row,.landing-dogs,.right-side{
-		display: flex;
 	}
 	.instagram-item,.left-side,.right-side,.dog2,.right-side_r{
 		width: 50%;
@@ -715,6 +670,10 @@ footer{
 		margin-top: -90px;
 		margin-left: -63px;
 		font-size: 20px;
+	}
+	.dog{
+		height: 435px;
+		background-position: -25px 0;
 	}
 	.dog3,.dog4{
 		height: 50%;
@@ -727,7 +686,6 @@ footer{
 		padding: 0;
 		max-width: 530px;
 		height: 380px;
-		display: flex;
 	}
 	.reviews img{
 		width: 320px;
@@ -743,7 +701,6 @@ footer{
 		padding: 25px;
 	}
 	.footer-mob{
-		display: flex;
 		font-size: 14px;
 	}
 	.info{
@@ -755,10 +712,10 @@ footer{
 		padding:0 95px;
 		height: 50px;
 	}
-	.header_burger,.login-mob{
+	.header_burger,.login-mob,.categories{
 		display: none;
 	}
-	.login{
+	.loginб.main_menu li:hover .categories,.categories li a,.login{
 		display: block;
 	}
 	.menu_log_mobile{
@@ -781,9 +738,6 @@ footer{
 	.main_menu li:first-child{
 		height: 100px;
 	}
-	.main_menu li:hover .categories{
-		display: block;
-	}
 	.main_menu li:hover{
 		background: none;
 	}
@@ -795,7 +749,6 @@ footer{
 		background: rgba(63, 66, 77, 0.7);
 		width: 200px;
 		height: auto;
-		display: none;
 	}
 	.categories li,.categories li:first-child{
 		width: 200px;
@@ -806,7 +759,6 @@ footer{
 		transition: all 0.1 ease-in;
 	}
 	.categories li a{
-		display: block;
 		width: 180px;
 	}
 	.icons{
@@ -837,7 +789,7 @@ footer{
 	}
 	.dog2{
 		height: 460px;
-		background-position: 0 0;
+		background-position: -45px 0;
 	}
 	.dog2 a:hover{
 		min-width: 160px;
