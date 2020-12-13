@@ -4,6 +4,9 @@
 	box-sizing: border-box;
 	font-family: 'Trispace', sans-serif;
 }
+nav{
+	background-image: url(https://i.pinimg.com/originals/04/8e/ba/048eba948cea3a92cd40ba3e003b2538.jpg);
+}
 ol{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
