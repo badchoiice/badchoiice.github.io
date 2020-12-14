@@ -66,6 +66,7 @@ a,.burger{
 	background: rgba(22,38,51,0.75);
 	font-size: 25px;
 	color: #f1f1f1;
+	cursor:pointer;
 }
 .main-info h2{
 	padding: 25px 0 0 0;
