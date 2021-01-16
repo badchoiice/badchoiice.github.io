@@ -1,7 +1,9 @@
 document.getElementById('burger_menu').onclick = function(){
 	document.getElementById('mobile_menu').classList.toggle('active')
 }
-
+document.getElementById('mobile_menu').onclick = function(){
+  document.getElementById('mobile_menu').classList.remove('active')
+  }
 $(document).ready(function() {
   var btn = $('#btn_up');  
   $(window).scroll(function() {     
