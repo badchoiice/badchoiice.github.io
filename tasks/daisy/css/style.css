@@ -77,20 +77,19 @@ h1 a{
 h1 a:hover{
 	top: -2px;
 }
-.container{
-	width: 100%;
+.bg{
 	position: relative;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center;	
+	background-position: center;
 }
-.ibg{
+.overlay{
+	width: 100%;
+	height: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	z-index: -1;
-	background-color: rgba(93, 93, 91, 0.33);
+	background-color: rgba(93, 93, 91, 0.33); 
 }
 .btn{
 	border-radius: 10px;
@@ -186,9 +185,10 @@ h1,.receive_block__name,.work-info__title,.portfolio__menu ul li a,
 /*перша сторінка*/
 .mainblock{
 	padding: 0 20px 15px 20px;
-	z-index: 2;
+	background-image: url(../img/bg1.webp);
+	position: relative;
 }
-.mainblock,.mainblock .ibg{
+.mainblock{
 	height: 100vh;
 	overflow: hidden;
 }
@@ -259,6 +259,7 @@ h1,.receive_block__name,.work-info__title,.portfolio__menu ul li a,
 .mainblock__content{
 	margin-top: 50%;
 	padding: 0 20px;
+	position: relative;
 }
 .mainblock__subtitle{
 	font-size: 18px;
@@ -360,12 +361,11 @@ h1,.receive_block__name,.work-info__title,.portfolio__menu ul li a,
 }
 /*третя сторінка*/
 .join_block{
-	z-index: 0;
-}
-.join_block,.join_block .ibg{
 	height: 330px;
+	background-image: url(../img/bg_2.webp);
 }
 .join_block__content{
+	position: relative;
 	margin-top: 20px;
 	padding:27px 10px;	
 	border: 8px solid #405364;
@@ -791,14 +791,7 @@ footer{
 }
 .footer{
 	min-height: 100px;
-	position: relative;
-	z-index: 5;
-	background-position: center;
-	background-size: cover;
-}
-.ibg_footer{
-	background-color: rgba(93, 93, 91, 0.5);
-	height: 100px;
+	background-image: url(../img/bg_3.webp);
 }
 .footer .logo{
 	margin-top: -20px;
@@ -916,10 +909,10 @@ footer{
 		padding: 15px 0;
 		font-size: 21px;
 	}
-	.join_block, .join_block .ibg{
+	.join_block{
 		height: 350px;
 	}
-	.footer,.ibg_footer{
+	.footer{
 		height: 100px;
 	}
 	.subtitle{
@@ -1093,13 +1086,9 @@ footer{
 	.mainblock__menu li{
 		margin-right: 20px;
 	}
-	.join_block,.join_block .ibg,{
+	.join_block{
 		height: 380px;
 	}
-	.footer,.ibg_footer{
-		height: 100px;
-	}
-
 	.text{
 		font-size: 19px;
 		line-height: 24px;
@@ -1139,21 +1128,16 @@ footer{
 	}
 }
 @media screen and (min-width:920px){
-	/*.block__arrow{
-	animation: arrow 0.93s infinite linear;
-	position: relative;
-	}*/
 	.block{
 		margin: 0 auto;
 	}
 	.block, .portfolio_block {
 		padding: 35px 45px;
 	}
-	.mainblock,.mainblock .ibg{
-		width: 100%;
+	.mainblock{
 		padding-bottom: 28px;
 	}
-	.receive_block,.join_block,.join_block .ibg,
+	.receive_block,.join_block,
 	.work_block__item,.team_block{
 		min-height: 576px;
 	}
@@ -1166,7 +1150,7 @@ footer{
 	.map_block iframe{
 		height: 334px;
 	}
-	.footer,.ibg_footer{
+	.footer{
 		height: 210px;
 	}
 	.mainblock__header{
